@@ -9,7 +9,7 @@ This assignment's main focus is adding google authentication via firebase.  Thin
 * Create a new firebase project
 * Enable google authentication
 * Move everything that was in App to the Home component - ie Home displays all dogs and employees
-* Do everything we did in class on monday:
+* Do everything we did in class:
 1. Have an Auth component with a login button
 1. Clicking the login button should log your user in
 1.  Create a navbar - when you are logged in you should see a brand and a logout button.  When you are logged out you should just see the brand,
