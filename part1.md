@@ -2,22 +2,23 @@
 For this assignment you will be building up a doggie day care using what you know about state and props with basic React.
 
 ## Requirements
-For this project we will be building out two sections of our DOM - the dogs and the employees.
+For this project we will be building out the main two sections of the DOM - the dogs and the employees.
 
-### Doggies
-- App should import in a DogPen component.
-- App should import in a file called dogs.js that exports an array of dog objects (chose whatever key/value pairs you would like).
-- App should take the array of dogs and pass it into DogPen
-- DogPen should import a Dog component
-- DogPen should map over the dogs array and make a Dog component
+### Dogs
+- A file `src/helpers/data/dogsData.js` should have an array called dogs filled with dog objects (see ERD in README.md)
+- dogsData should export a function called `getAllDogs` that returns the dogs array
+- The DogPen component should import the Dog component
+- App should call `dogsData.getAllDogs()` to get the dogs array and pass the array of dogs into `DogPen.printDogs`
+
+- `DogPen.printDogs` should map over the array passed into it and call the Dog component, passing in an individual dog each time.
 - The Dog component should display the dog in a way of your choosing.
 
 ### Employees
-- App should import in a StaffRoom component.
-- App should import in a file called employees.js that exports an array of employee objects (chose whatever key/value pairs you would like).
-- App should take the array of employees and pass it into StaffRoom
-- StaffRoom should import a Employee component
-- StaffRoom should map over the employees array and make a Employee component
+- A file `src/helpers/data/employeesData.js` should have an array called employees filled with employee objects (see ERD in README.md)
+- employeesData should export a function called `getAllEmployees` that returns the employees array
+- The StaffRoom component should import the Employee component
+- App should call `employeesData.getAllEmployees()` to get the employees array and pass the array of employees into `StaffRoom.printEmployees`
+- `StaffRoom.printEmployees` should map over the array passed into it and call the Employee component, passing in an individual employee each time.
 - The Employee component should display the employee in a way of your choosing.
 
 ### Code specification
