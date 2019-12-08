@@ -12,7 +12,7 @@ Currently you have a dogsData.js file and an employeesData.js file.  These both 
 {
   "dogs": 'moo',
   "employees": 'moo',
-  "walks": 'moo',
+  "walks": 'moo'
 }
 ```
 * Create `db/dogs.json` seed file with the information that was in dogs.js - no arrays.  You will need to modify this data so it looks like normal firebase data - object of objects.
